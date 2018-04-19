@@ -251,8 +251,8 @@ div.header
 					font-family: HarenosoraMincho;
 					font-size: 16px;
 					font-style:none;
-					padding-left: 100px;
-				    padding-right: 100px;
+					padding-left: 17%;
+    				padding-right: 15%;
 				    line-height: 20px;
 				}
 			}
@@ -302,7 +302,7 @@ div.inner
 			div.text_product
 			{
 				float:left;
-				width:500px;
+				width: 50%;
 				padding-left:70px;
 
 				h5
@@ -331,8 +331,6 @@ div.inner
 			    margin-top: -30px;
 			    animation-name: example;
 			    animation-duration: 4s;
-			    animation-iteration-count: 2;
-			    animation-direction: alternate-reverse;
 			}
 
 		}
@@ -459,8 +457,6 @@ div.inner
 				padding-right:3px;
 				animation-name: example;
 			    animation-duration: 4s;
-			    animation-iteration-count: 2;
-			    animation-direction: alternate-reverse;
 			}
 
 			img.ihara:last-child
@@ -468,8 +464,6 @@ div.inner
 				padding-right:0px;
 				animation-name: example;
 			    animation-duration: 4s;
-			    animation-iteration-count: 2;
-			    animation-direction: alternate-reverse;
 			}
 		}
 	}
@@ -518,8 +512,6 @@ div.inner
 			{
 				animation-name: example;
 			    animation-duration: 4s;
-			    animation-iteration-count: 2;
-			    animation-direction: alternate-reverse;
 			}
 		}
 	}
@@ -655,7 +647,7 @@ div.footer
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
 
 	div.header
 	{
@@ -674,12 +666,13 @@ div.footer
 
 			    img.logo
 			    {
-			    	padding-left: 20px;
+			    	padding-left: 5%;
+    				display: inline-block;
 			    }
 
 				ul
 				{
-					margin: 10px 0px 0px 60px;
+					margin: 10px 0px 0px 30px;
 
 					li:nth-child(2)
 					{
@@ -764,12 +757,10 @@ div.footer
 
 			img.btn_banner_sm
 			{
-				display: block;
-    			position: relative;
-			    float: right;
-    			margin-top: -80px;
-    			margin-right: 20px;
-    			opacity:0.8;
+				display: inline-block;
+			    position: relative;
+			    opacity: 0.8;
+			    margin-left: 10%;
 			}
 
 		}
@@ -777,10 +768,12 @@ div.footer
 
 	div.inner
 	{
-		width:100%;
+		max-width:750px;
 		margin: 0 auto;
 	    height: auto;
 	    display: block;
+	    min-width:320px;
+	    width:100%;
 	}
 
 	div.inner
@@ -794,10 +787,11 @@ div.footer
 			div.product
 			{
 				margin-top:50px;
+				margin-left: 5%;
 
 				h3
 				{
-					width: 24px;
+					width: 4%;
 				    border-top: 1px solid;
 				    font-family: HarenosoraMincho;
 				    font-size:22px;
@@ -808,8 +802,8 @@ div.footer
 				div.text_product
 				{
 					float:left;
-					width:500px;
-					padding-left:20px;
+					width: 55%;
+    				padding-left: 7%;
 
 					h5
 					{
@@ -832,13 +826,11 @@ div.footer
 				img.img_product
 				{
 					float: right;
-				    width: 200px;
+				    width: 30%;
 				    display: block;
-				    margin-top: -45px;
+				    margin-top: 5px;
 				    animation-name: example;
 				    animation-duration: 4s;
-				    animation-iteration-count: 2;
-				    animation-direction: alternate-reverse;
 				}
 
 			}
@@ -923,7 +915,7 @@ div.footer
 
 				div.btn_order
 				{
-					width: 600px;
+					width: 100%;
 				    display: block;
 				    margin-left: auto;
 				    margin-right: auto;
@@ -936,10 +928,12 @@ div.footer
 
 					img.btn_content_sm
 					{
-						display: block;
-					    margin-left: auto;
+						display: inline-block;
+					    margin-left: 10%;
 					    margin-right: auto;
 					    float: none;
+					    max-width: 80%;
+					    min-width: 65%;
 					}
 				}
 			}
@@ -956,24 +950,28 @@ div.footer
 
 				img.ihara
 				{
-					padding-right:10px;
+					padding-right: 2%;
+					width:28%;
 				}
 
 				img.ihara:last-child
 				{
 					padding-right:0px;
 					padding-top:10px;
+					width:28%;
 				}
 
 				img.ihara:first-child
 				{
-					padding-left:80px;
+					padding-left: 4%;
+					width:28%;
 				}
 
-					img.ihara:nth-child(4)
+				img.ihara:nth-child(4)
 				{
-					padding-left:80px;
-					padding-top:10px;
+					padding-left: 4%;
+				    padding-top: 10px;
+				    width: 28%;
 				}
 			}
 		}
@@ -1001,7 +999,7 @@ div.footer
 
 			div.img_company
 			{
-				padding:45px 0px 0px 38px;
+				padding: 45px 0px 0px 3%;
 
 				img.pd_company
 				{
@@ -1021,11 +1019,10 @@ div.footer
 				img.company_sm
 				{
 					display: inline;
-					padding:0px 15px 10px 0px;
+					padding: 0px 2% 2% 0px;
 					animation-name: example;
 				    animation-duration: 4s;
-				    animation-iteration-count: 2;
-				    animation-direction: alternate-reverse;
+				    width:47%;
 				}
 
 				img.company_sm:nth-child(2n+1)
@@ -1139,133 +1136,4 @@ div.footer
 
 	}
  
-}
-
-@media only screen and (min-width: 320px) and (max-width: 425px)
-{
-	div.inner
-	{
-		margin: 0;
-	    height: auto;
-	    display: block;
-	    width:100%;
-	}
-
-	div.header
-	{
-		div.bg_banner
-		{
-			background: url(../images/banner_sm.jpg) no-repeat center top;
-			width:100%;
-			height:733px;
-
-			div.nav
-			{
-				
-			    padding: 25px 0px 0px 0px;
-			    width: 100%;
-			    position: relative;
-
-			    img.logo
-			    {
-			    	padding-left: 20px;
-			    }
-
-				ul
-				{
-					margin: 10px 0px 0px 60px;
-
-					li:nth-child(2)
-					{
-						padding: 0px 10px 0px 10px;
-						display: inline-block;
-						border-bottom: 0px solid #999999;
-						border-top: 0px solid #999999;
-						border-left: 1px solid #999999;
-						border-right: 1px solid #999999;
-
-						a
-						{
-							text-decoration: none;
-							color:#000000;
-							font-family:HarenosoraMincho;
-							font-size:21px;
-
-							&:hover
-							{
-								text-decoration: none;
-								color:#dd0300;
-								font-family:HarenosoraMincho;
-								font-size:21px;
-							}
-						}
-					}
-
-					li:nth-child(3)
-					{
-						padding: 0px 10px 0px 10px;
-						display: inline-block;
-						border-bottom: 0px solid #999999;
-						border-top: 0px solid #999999;
-						border-right: 1px solid #999999;
-
-						a
-						{
-							text-decoration: none;
-							color:#000000;
-							font-family:HarenosoraMincho;
-							font-size:21px;
-
-							&:hover
-							{
-								text-decoration: none;
-								color:#dd0300;
-								font-family:HarenosoraMincho;
-								font-size:21px;
-							}
-						}
-
-					}
-
-					li
-					{
-						padding: 0px 10px 0px 10px;
-						display: inline-block;
-
-						a
-						{
-							text-decoration: none;
-							color:#000000;
-							font-family:HarenosoraMincho;
-							font-size:21px;
-
-							&:hover
-							{
-								text-decoration: none;
-								color:#dd0300;
-								font-family:HarenosoraMincho;
-								font-size:21px;
-							}
-						}
-					}
-				}
-			}
-
-			div.btn_banner
-			{
-			    display:none;
-			}
-
-			img.btn_banner_sm
-			{
-				display: block;
-    			position: relative;
-			    float: right;
-    			margin-top: -80px;
-    			margin-right: 20px;
-    			opacity:0.8;
-			}
-
-		}
-	}
 }
