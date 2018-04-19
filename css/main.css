@@ -507,10 +507,10 @@ div.footer {
         width: 100%;
         border-top: 4px double #151d1d;
         border-bottom: 1px solid #b8bbbb;
-        height: 400px;
+        height: 80%;
         margin-top: 10px; }
         div.inner div.products div.order div.phone {
-          width: 295px;
+          width: 48%;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -530,7 +530,7 @@ div.footer {
             font-size: 24px;
             font-style: none; }
         div.inner div.products div.order div.fax {
-          width: 295px;
+          width: 48%;
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -644,7 +644,8 @@ div.footer {
           text-decoration: none;
           color: #999999;
           font-family: Hirakakupro;
-          font-size: 13px; }
+          font-size: 13px;
+          line-height: 25px; }
           div.footer div.inner div.nav_footer ul li a:hover {
             text-decoration: none;
             color: #dd0300;

@@ -840,12 +840,12 @@ div.footer
 				width:100%;
 				border-top:4px double #151d1d;
 				border-bottom:1px solid #b8bbbb;
-				height: 400px;
+				height: 80%;
 				margin-top: 10px;
 
 				div.phone
 				{
-					width: 295px;
+					width: 48%;
 	    			display: block;
 				    margin-left: auto;
 				    margin-right: auto;
@@ -882,7 +882,7 @@ div.footer
 
 				div.fax
 				{
-					width: 295px;
+					width: 48%;
 	    			display: block;
 				    margin-left: auto;
 				    margin-right: auto;
@@ -1095,6 +1095,7 @@ div.footer
 							color:#999999;
 							font-family:Hirakakupro;
 							font-size:13px;
+							line-height: 25px;
 
 							&:hover
 							{
