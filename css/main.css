@@ -1,0 +1,746 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  position: relative; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: HarenosoraMincho;
+  src: url(‘../fonts/Harenosora.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Hirakakupro;
+  src: url(‘../fonts/hirakakupro-w3.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; }
+div.inner {
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  max-width: 970px; }
+
+div.clear-fix {
+  clear: both; }
+
+@keyframes example {
+  0% {
+    transform: scale(0.2); }
+  25% {
+    transform: scale(0.3); }
+  50% {
+    transform: scale(0.5); }
+  75% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+div.header div.bg_banner {
+  background: url(../images/banner.jpg) no-repeat center top;
+  width: 100%;
+  height: 729px; }
+  div.header div.bg_banner div.nav {
+    padding: 25px 0px 0px 40px;
+    width: 30px;
+    position: fixed; }
+    div.header div.bg_banner div.nav ul {
+      margin: 10px 0px 0px 5px; }
+      div.header div.bg_banner div.nav ul li:nth-child(2) {
+        border-bottom: 1px solid #999999;
+        border-top: 1px solid #999999;
+        padding: 10px 0px 10px 0px; }
+        div.header div.bg_banner div.nav ul li:nth-child(2) a {
+          text-decoration: none;
+          color: #000000;
+          font-family: HarenosoraMincho;
+          font-size: 16px; }
+          div.header div.bg_banner div.nav ul li:nth-child(2) a:hover {
+            text-decoration: none;
+            color: #dd0300;
+            font-family: HarenosoraMincho;
+            font-size: 16px; }
+      div.header div.bg_banner div.nav ul li:nth-child(3) {
+        border-bottom: 1px solid #999999;
+        padding: 10px 0px 10px 0px; }
+        div.header div.bg_banner div.nav ul li:nth-child(3) a {
+          text-decoration: none;
+          color: #000000;
+          font-family: HarenosoraMincho;
+          font-size: 16px; }
+          div.header div.bg_banner div.nav ul li:nth-child(3) a:hover {
+            text-decoration: none;
+            color: #dd0300;
+            font-family: HarenosoraMincho;
+            font-size: 16px; }
+      div.header div.bg_banner div.nav ul li {
+        padding: 10px 0px 10px 0px; }
+        div.header div.bg_banner div.nav ul li a {
+          text-decoration: none;
+          color: #000000;
+          font-family: HarenosoraMincho;
+          font-size: 16px; }
+          div.header div.bg_banner div.nav ul li a:hover {
+            text-decoration: none;
+            color: #dd0300;
+            font-family: HarenosoraMincho;
+            font-size: 16px; }
+  div.header div.bg_banner div.btn_banner {
+    width: 30px;
+    background: #000000;
+    right: 0px;
+    top: 200px;
+    position: fixed; }
+    div.header div.bg_banner div.btn_banner a {
+      text-decoration: none;
+      color: #ffffff;
+      font-family: HarenosoraMincho;
+      font-size: 16px;
+      padding: 10px 10px 0px 0px; }
+      div.header div.bg_banner div.btn_banner a img.btn_img {
+        padding: 3px; }
+      div.header div.bg_banner div.btn_banner a p {
+        padding: 6px; }
+  div.header div.bg_banner div.btn_banner:hover {
+    opacity: 0.7; }
+  div.header div.bg_banner img.btn_banner_sm {
+    display: none; }
+
+div.kazunoko {
+  background: #fcfbfb; }
+  div.kazunoko div.inner div.text-kazunoko {
+    background: #ffffff; }
+    div.kazunoko div.inner div.text-kazunoko h4 {
+      color: #d31f1e;
+      font-family: HarenosoraMincho;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 58px; }
+    div.kazunoko div.inner div.text-kazunoko h2 {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0px 48px 0px; }
+    div.kazunoko div.inner div.text-kazunoko p {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 16px;
+      font-style: none;
+      padding-left: 100px;
+      padding-right: 100px;
+      line-height: 20px; }
+
+div.inner {
+  background: #ffffff; }
+  div.inner div.products {
+    margin-top: 60px; }
+    div.inner div.products h4 {
+      color: #d31f1e;
+      font-family: HarenosoraMincho;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 58px; }
+    div.inner div.products h2 {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0px 48px 0px; }
+    div.inner div.products div.product {
+      margin-top: 50px; }
+      div.inner div.products div.product h3 {
+        width: 24px;
+        border-top: 1px solid;
+        font-family: HarenosoraMincho;
+        font-size: 22px;
+        font-style: none;
+        float: left; }
+      div.inner div.products div.product div.text_product {
+        float: left;
+        width: 500px;
+        padding-left: 70px; }
+        div.inner div.products div.product div.text_product h5 {
+          font-family: HarenosoraMincho;
+          font-size: 20px;
+          font-style: none;
+          line-height: 25px; }
+        div.inner div.products div.product div.text_product p {
+          font-family: HarenosoraMincho;
+          font-size: 16px;
+          font-style: none;
+          padding-top: 20px;
+          line-height: 25px; }
+      div.inner div.products div.product img.img_product {
+        float: right;
+        width: 350px;
+        display: block;
+        margin-top: -30px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse; }
+    div.inner div.products div.order {
+      width: 100%;
+      border-top: 4px double #151d1d;
+      border-bottom: 1px solid #b8bbbb;
+      height: 125px;
+      margin-top: 10px; }
+      div.inner div.products div.order div.phone {
+        width: 295px;
+        float: left;
+        margin: 20px 25px 25px 10px; }
+        div.inner div.products div.order div.phone h3 {
+          font-family: HarenosoraMincho;
+          font-size: 16px;
+          font-style: none;
+          padding-bottom: 7px; }
+        div.inner div.products div.order div.phone p {
+          font-family: HarenosoraMincho;
+          font-size: 13px;
+          font-style: none;
+          padding-top: 7px; }
+        div.inner div.products div.order div.phone span {
+          font-family: HarenosoraMincho;
+          font-size: 24px;
+          font-style: none; }
+      div.inner div.products div.order div.fax {
+        width: 295px;
+        float: left;
+        margin: 20px 0px 25px 0px; }
+        div.inner div.products div.order div.fax h3 {
+          font-family: HarenosoraMincho;
+          font-size: 16px;
+          font-style: none;
+          padding-bottom: 7px; }
+        div.inner div.products div.order div.fax p {
+          font-family: HarenosoraMincho;
+          font-size: 13px;
+          font-style: none;
+          padding-top: 7px; }
+        div.inner div.products div.order div.fax span {
+          font-family: HarenosoraMincho;
+          font-size: 24px;
+          font-style: none; }
+      div.inner div.products div.order div.btn_order {
+        float: right;
+        margin: 20px 0px 25px 0px; }
+        div.inner div.products div.order div.btn_order img.btn_content_sm {
+          display: none; }
+  div.inner div.spirits {
+    margin-top: 60px; }
+    div.inner div.spirits h4 {
+      color: #d31f1e;
+      font-family: HarenosoraMincho;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 58px; }
+    div.inner div.spirits h2 {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0px 48px 0px; }
+    div.inner div.spirits div.img_spirits {
+      padding-top: 45px; }
+      div.inner div.spirits div.img_spirits img.ihara {
+        padding-right: 3px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse; }
+      div.inner div.spirits div.img_spirits img.ihara:last-child {
+        padding-right: 0px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse; }
+  div.inner div.company {
+    margin-top: 60px; }
+    div.inner div.company h4 {
+      color: #d31f1e;
+      font-family: HarenosoraMincho;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 58px; }
+    div.inner div.company h2 {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0px 48px 0px; }
+    div.inner div.company div.img_company {
+      padding-top: 45px; }
+      div.inner div.company div.img_company img.pd_company {
+        padding-right: 3px; }
+      div.inner div.company div.img_company img.pd_company:last-child {
+        padding-right: 0px; }
+      div.inner div.company div.img_company img.company_sm {
+        display: none; }
+      div.inner div.company div.img_company img.company_pc {
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse; }
+  div.inner div.information {
+    margin-top: 60px; }
+    div.inner div.information h4 {
+      color: #d31f1e;
+      font-family: HarenosoraMincho;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 58px; }
+    div.inner div.information h2 {
+      color: #000000;
+      font-family: HarenosoraMincho;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0px 48px 0px; }
+    div.inner div.information div.text_information {
+      padding-top: 45px;
+      width: 100%; }
+      div.inner div.information div.text_information dl dt {
+        font-family: Hirakakupro;
+        font-size: 16px;
+        font-style: normal;
+        color: #999999;
+        float: left;
+        padding: 12px 45px 13px 5px; }
+      div.inner div.information div.text_information dl dd {
+        font-family: Hirakakupro;
+        font-size: 16px;
+        font-style: normal;
+        color: #000000;
+        padding: 12px 0px 13px 0px;
+        border-bottom: 1px dotted #7f7f7f;
+        text-decoration: underline; }
+
+div.footer {
+  margin-top: 155px; }
+  div.footer div.inner div.nav_footer {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center; }
+    div.footer div.inner div.nav_footer ul li {
+      display: inline-block; }
+      div.footer div.inner div.nav_footer ul li a {
+        text-decoration: none;
+        color: #999999;
+        font-family: Hirakakupro;
+        font-size: 13px; }
+        div.footer div.inner div.nav_footer ul li a:hover {
+          text-decoration: none;
+          color: #dd0300;
+          font-family: Hirakakupro;
+          font-size: 13px; }
+    div.footer div.inner div.nav_footer ul li:nth-child(2n) {
+      display: inline-block;
+      border-right: 1px solid #999999;
+      padding: 0px 10px 0px 10px;
+      border-left: 1px solid #999999; }
+      div.footer div.inner div.nav_footer ul li:nth-child(2n) a {
+        text-decoration: none;
+        color: #999999;
+        font-family: Hirakakupro;
+        font-size: 13px; }
+        div.footer div.inner div.nav_footer ul li:nth-child(2n) a:hover {
+          text-decoration: none;
+          color: #dd0300;
+          font-family: Hirakakupro;
+          font-size: 13px; }
+  div.footer div.copyright {
+    background: #000000;
+    text-align: center;
+    font-family: Hirakakupro;
+    font-size: 12px;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px; }
+
+@media only screen and (max-width: 750px) {
+  div.header div.bg_banner {
+    background: url(../images/banner_sm.jpg) no-repeat center top;
+    width: 100%;
+    height: 733px; }
+    div.header div.bg_banner div.nav {
+      padding: 25px 0px 0px 0px;
+      width: 100%;
+      position: relative; }
+      div.header div.bg_banner div.nav img.logo {
+        padding-left: 20px; }
+      div.header div.bg_banner div.nav ul {
+        margin: 10px 0px 0px 60px; }
+        div.header div.bg_banner div.nav ul li:nth-child(2) {
+          padding: 0px 10px 0px 10px;
+          display: inline-block;
+          border-bottom: 0px solid #999999;
+          border-top: 0px solid #999999;
+          border-left: 1px solid #999999;
+          border-right: 1px solid #999999; }
+          div.header div.bg_banner div.nav ul li:nth-child(2) a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li:nth-child(2) a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+        div.header div.bg_banner div.nav ul li:nth-child(3) {
+          padding: 0px 10px 0px 10px;
+          display: inline-block;
+          border-bottom: 0px solid #999999;
+          border-top: 0px solid #999999;
+          border-right: 1px solid #999999; }
+          div.header div.bg_banner div.nav ul li:nth-child(3) a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li:nth-child(3) a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+        div.header div.bg_banner div.nav ul li {
+          padding: 0px 10px 0px 10px;
+          display: inline-block; }
+          div.header div.bg_banner div.nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+    div.header div.bg_banner div.btn_banner {
+      display: none; }
+    div.header div.bg_banner img.btn_banner_sm {
+      display: block;
+      position: relative;
+      float: right;
+      margin-top: -80px;
+      margin-right: 20px;
+      opacity: 0.8; }
+
+  div.inner {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block; }
+
+  div.inner {
+    background: #ffffff; }
+    div.inner div.products {
+      margin-top: 60px; }
+      div.inner div.products div.product {
+        margin-top: 50px; }
+        div.inner div.products div.product h3 {
+          width: 24px;
+          border-top: 1px solid;
+          font-family: HarenosoraMincho;
+          font-size: 22px;
+          font-style: none;
+          float: left; }
+        div.inner div.products div.product div.text_product {
+          float: left;
+          width: 500px;
+          padding-left: 20px; }
+          div.inner div.products div.product div.text_product h5 {
+            font-family: HarenosoraMincho;
+            font-size: 20px;
+            font-style: none;
+            line-height: 25px; }
+          div.inner div.products div.product div.text_product p {
+            font-family: HarenosoraMincho;
+            font-size: 16px;
+            font-style: none;
+            padding-top: 20px;
+            line-height: 25px; }
+        div.inner div.products div.product img.img_product {
+          float: right;
+          width: 200px;
+          display: block;
+          margin-top: -45px;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: 2;
+          animation-direction: alternate-reverse; }
+      div.inner div.products div.order {
+        width: 100%;
+        border-top: 4px double #151d1d;
+        border-bottom: 1px solid #b8bbbb;
+        height: 400px;
+        margin-top: 10px; }
+        div.inner div.products div.order div.phone {
+          width: 295px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          float: none; }
+          div.inner div.products div.order div.phone h3 {
+            font-family: HarenosoraMincho;
+            font-size: 16px;
+            font-style: none;
+            padding-bottom: 7px; }
+          div.inner div.products div.order div.phone p {
+            font-family: HarenosoraMincho;
+            font-size: 13px;
+            font-style: none;
+            padding-top: 7px; }
+          div.inner div.products div.order div.phone span {
+            font-family: HarenosoraMincho;
+            font-size: 24px;
+            font-style: none; }
+        div.inner div.products div.order div.fax {
+          width: 295px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          float: none; }
+          div.inner div.products div.order div.fax h3 {
+            font-family: HarenosoraMincho;
+            font-size: 16px;
+            font-style: none;
+            padding-bottom: 7px; }
+          div.inner div.products div.order div.fax p {
+            font-family: HarenosoraMincho;
+            font-size: 13px;
+            font-style: none;
+            padding-top: 7px; }
+          div.inner div.products div.order div.fax span {
+            font-family: HarenosoraMincho;
+            font-size: 24px;
+            font-style: none; }
+        div.inner div.products div.order div.btn_order {
+          width: 600px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          float: none; }
+          div.inner div.products div.order div.btn_order img.btn_content_pc {
+            display: none; }
+          div.inner div.products div.order div.btn_order img.btn_content_sm {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            float: none; }
+    div.inner div.spirits div.img_spirits {
+      padding-top: 45px;
+      width: 100%; }
+      div.inner div.spirits div.img_spirits img.ihara {
+        padding-right: 10px; }
+      div.inner div.spirits div.img_spirits img.ihara:last-child {
+        padding-right: 0px;
+        padding-top: 10px; }
+      div.inner div.spirits div.img_spirits img.ihara:first-child {
+        padding-left: 80px; }
+      div.inner div.spirits div.img_spirits img.ihara:nth-child(4) {
+        padding-left: 80px;
+        padding-top: 10px; }
+    div.inner div.company {
+      margin-top: 60px; }
+      div.inner div.company h4 {
+        color: #d31f1e;
+        font-family: HarenosoraMincho;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 58px; }
+      div.inner div.company h2 {
+        color: #000000;
+        font-family: HarenosoraMincho;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0px 48px 0px; }
+      div.inner div.company div.img_company {
+        padding: 45px 0px 0px 38px; }
+        div.inner div.company div.img_company img.pd_company {
+          padding-right: 0px; }
+        div.inner div.company div.img_company img.pd_company:last-child {
+          padding-right: 0px; }
+        div.inner div.company div.img_company img.company_pc {
+          display: none; }
+        div.inner div.company div.img_company img.company_sm {
+          display: inline;
+          padding: 0px 15px 10px 0px;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: 2;
+          animation-direction: alternate-reverse; }
+        div.inner div.company div.img_company img.company_sm:nth-child(2n+1) {
+          display: inline;
+          padding: 0px 10px 10px 40px; }
+    div.inner div.information div.text_information {
+      padding-top: 45px;
+      width: 100%; }
+      div.inner div.information div.text_information dl dt {
+        font-family: Hirakakupro;
+        font-size: 28px;
+        font-style: normal;
+        color: #999999;
+        float: none;
+        padding: 12px 0px 13px 40px; }
+      div.inner div.information div.text_information dl dd {
+        font-family: Hirakakupro;
+        font-size: 28px;
+        font-style: normal;
+        color: #000000;
+        padding: 12px 50px 13px 40px;
+        border-bottom: 1px dotted #7f7f7f;
+        text-decoration: underline;
+        line-height: 40px; }
+
+  div.footer {
+    margin-top: 155px; }
+    div.footer div.inner div.nav_footer {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center; }
+      div.footer div.inner div.nav_footer ul li {
+        display: inline-block; }
+        div.footer div.inner div.nav_footer ul li a {
+          text-decoration: none;
+          color: #999999;
+          font-family: Hirakakupro;
+          font-size: 13px; }
+          div.footer div.inner div.nav_footer ul li a:hover {
+            text-decoration: none;
+            color: #dd0300;
+            font-family: Hirakakupro;
+            font-size: 13px; }
+      div.footer div.inner div.nav_footer ul li:nth-child(2n) {
+        display: inline-block;
+        border-right: 1px solid #999999;
+        padding: 0px 10px 0px 10px;
+        border-left: 1px solid #999999; }
+        div.footer div.inner div.nav_footer ul li:nth-child(2n) a {
+          text-decoration: none;
+          color: #999999;
+          font-family: Hirakakupro;
+          font-size: 13px; }
+          div.footer div.inner div.nav_footer ul li:nth-child(2n) a:hover {
+            text-decoration: none;
+            color: #dd0300;
+            font-family: Hirakakupro;
+            font-size: 13px; } }
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  div.inner {
+    margin: 0;
+    height: auto;
+    display: block;
+    width: 100%; }
+
+  div.header div.bg_banner {
+    background: url(../images/banner_sm.jpg) no-repeat center top;
+    width: 100%;
+    height: 733px; }
+    div.header div.bg_banner div.nav {
+      padding: 25px 0px 0px 0px;
+      width: 100%;
+      position: relative; }
+      div.header div.bg_banner div.nav img.logo {
+        padding-left: 20px; }
+      div.header div.bg_banner div.nav ul {
+        margin: 10px 0px 0px 60px; }
+        div.header div.bg_banner div.nav ul li:nth-child(2) {
+          padding: 0px 10px 0px 10px;
+          display: inline-block;
+          border-bottom: 0px solid #999999;
+          border-top: 0px solid #999999;
+          border-left: 1px solid #999999;
+          border-right: 1px solid #999999; }
+          div.header div.bg_banner div.nav ul li:nth-child(2) a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li:nth-child(2) a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+        div.header div.bg_banner div.nav ul li:nth-child(3) {
+          padding: 0px 10px 0px 10px;
+          display: inline-block;
+          border-bottom: 0px solid #999999;
+          border-top: 0px solid #999999;
+          border-right: 1px solid #999999; }
+          div.header div.bg_banner div.nav ul li:nth-child(3) a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li:nth-child(3) a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+        div.header div.bg_banner div.nav ul li {
+          padding: 0px 10px 0px 10px;
+          display: inline-block; }
+          div.header div.bg_banner div.nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: HarenosoraMincho;
+            font-size: 21px; }
+            div.header div.bg_banner div.nav ul li a:hover {
+              text-decoration: none;
+              color: #dd0300;
+              font-family: HarenosoraMincho;
+              font-size: 21px; }
+    div.header div.bg_banner div.btn_banner {
+      display: none; }
+    div.header div.bg_banner img.btn_banner_sm {
+      display: block;
+      position: relative;
+      float: right;
+      margin-top: -80px;
+      margin-right: 20px;
+      opacity: 0.8; } }
+
+/*# sourceMappingURL=main.css.map */
